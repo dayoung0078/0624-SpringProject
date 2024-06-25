@@ -8,35 +8,11 @@
     <link rel="stylesheet" href="../../css/reset.css">
     <link rel="stylesheet" href="../../css/font.css">
     <link rel="stylesheet" href="../../css/subPageAll.css">
+    <link rel="stylesheet" href="../../css/KDY2.css">
     <link rel="stylesheet" href="../../css/KDY.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script>
-        window.addEventListener("load", () => {
-            function bubbles() {
-                var bubbleContainers = document.querySelectorAll(".particleText.bubbles");
-                bubbleContainers.forEach(function (container) {
-                    var bubblecount = (container.offsetWidth / 50) * 10;
-                    for (var i = 0; i <= bubblecount; i++) {
-                        var size = (getRandomNumber(40, 80) / 10);
-                        var particle = document.createElement('span');
-                        particle.className = 'particle';
-                        particle.style.top = getRandomNumber(20, 80) + '%';
-                        particle.style.left = getRandomNumber(0, 95) + '%';
-                        particle.style.width = size + 'px';
-                        particle.style.height = size + 'px';
-                        particle.style.animationDelay = (getRandomNumber(0, 30) / 10) + 's';
-                        container.appendChild(particle);
-                    }
-                });
-            }
-
-            function getRandomNumber(min, max) {
-                return Math.floor(Math.random() * (max - min + 1)) + min;
-            }
-
-            bubbles();
-        });
-
+        
     </script>
 </head>
 
@@ -86,7 +62,7 @@
     <div class="W100_Lee">
         <div class="W100_Lee">
             <div>
-                <p class="section_subTite_header_Lee ">한번 더 생각하게 만드는 인간의 감정에 대한 영화 리뷰 </p>
+                <p class="section_subTite_header_Lee ">한번 더 생각하게 만드는 인간의 감정에 대한 영화수목금의 이것 저것 리뷰 </p>
             </div>
             <div class="section_subTite_Lee">
                 <p>" HER " 사랑에 대한 정의는 누가 내리는 것인가 </p>
@@ -106,54 +82,66 @@
         </div>
     </div>
     <!-- 영화 소개  -->
-    <div>
-        <div style="margin-top: 10px ; display: flex; justify-content: center; position: relative; z-index: -1">
-            <img src="./img-her/big-poster.png" width="938" height="623">
 
-            <div class="textContainer">
-                <span class="particleText bubbles">누가 이 사람을 욕할 수 있을까.</span>
-            </div>
+    <div>
+        <div style="margin-top: 50px ; display: flex; justify-content: center; position: relative; z-index: -1">
+            <img src="./img-her/big-poster.png" width="960" height="636">
         </div>
+
+            <div style="margin-top: 50px ; display: flex; justify-content: center; z-index: -1">
+
+               <p><div class="firstTitle-DY">누가 이 사람을 비난 할 수 있을까?</div></p>    
+        </div>    
+    </div>
+
         <div>
             <p style="margin:50px 0; text-align: center; "></p>
 
-            <div style="font-family: 'BMHANNAPro'; width: 938px; margin: 0 auto;">
-                이 영화에 대해 아무것도 모른 채 포스터만 보고 예매했다. 제목, 포스터 색감, 주인공의 눈빛이 끌렸다.
-                언제일진 모르겠지만 꼭 볼 거란 다짐을 했다. - 그랜드 부다페스트 호텔 - 에는 색감에만 끌린 것이였으니
+            <div class="subtitle-DY";>
+                이 영화에 대해 아무것도 모른 채 포스터만 보고 예매했다. 제목, 포스터 색감, 주인공의 눈빛이 끌렸다.<br>
+                언제일진 모르겠지만 꼭 볼 거란 다짐을 했다.<br> - 그랜드 부다페스트 호텔 - 에는 색감에만 끌린 것이였으니
                 보다 더 끌린 것이겠다.
             </div>
+        </div>
 
-            <!--  기본 설명  -->
-            <div>
-                <p style="margin:100px 0; text-align: center; "></p>
-
-                <div class="subtitle-DY a">
-                    <p style="text-align: center"><a>장르 : 멜로, 드라마, SF</a></p>
-                    <p style="text-align: center"><a>출연 : 호아킨 피닉스, 에이미 애덤스, 루니마라, 올리비아 와일드, 스칼렛 요한슨</a></p>
-                    <p style="text-align: center"><a>제작사 : 안나푸르나 픽처스</a></p>
-                    <p style="text-align: center"><a>개봉일 : 2014년 5월 22일</a></p>
-                    <p style="text-align: center"><a>상영시간 : 126분</a></p>
-                </div>
-
-                <div class="actor-Int">
-                    <p style="margin:150px 0;"></p>
-                    <div class="wrapper">
-                            <div class="actor-Int">
-                                <button class="btn rounded">테오도르 트웸블리</button>
-                            <p>- 감성적인 대필작가, 그는 사람들이 감정을 담은 편지를 작성하지만, 개인적으로는 외롭고 공허한 삶을 살고 있다.</p>
-                                <button class="btn rounded">사만다</button>
-                            <p>- 엘리먼트 소프트웨어라는 기업이 만든 인공지능으로, 테오도르와 깊은 정신적 교감을 나누며 사랑에 빠진다.</p>
-
-                            <button class="btn rounded">캐서린</button>
-                            <div class="actor-Int">
-                                <p>-테오도르와 별거중인 아내로 테오도르와 함께 자랐으며, 그와의 관계에서 실망감을 느끼고 이혼을 요구한다.</p>
-                            </div>
-                        </div>
+        <p sytle="margin:50px; text-align: center;"></p>    
+        <div style="display: flex; justify-content: center; margin:50px; text-align: center;">
+                <button class="btn rounded">영 화 정 보</button></div>
+                <div> 
+                    <div class="subtitle-big">
+                        <p>장르 : 멜로, 드라마, SF</p>
+                        <p>출연 : 호아킨 피닉스, 에이미 애덤스, 루니마라, 올리비아 와일드, 스칼렛 요한슨</p>
+                        <p>제작사 : 안나푸르나 픽쳐스</p>
+                        <p>개봉일 : 2014년 5월 22일</p>
+                        <p>상영시간 : 126분</p>
+                    
                     </div>
                 </div>
-            </div>
+
+ 
+
+                    
+
+        <div>
+            <div style="display: flex; justify-content: center; margin:50px; text-align: center;">
+                <button class="btn rounded">주요출연진</button></div>
+        <div>       
+                    <div style="border:0px; border-radius:8px; background-color:#FFE6E6; margin:2px; padding:6px;">
+                        <div class="actor-Int" style="display:flex; gap: 50px;">
+
+                            <div class="actor-detail"><div class="actor-name"style="margin-bottom:20px";>테오도르 트웸블리</div> 
+                            <p>감성적인 대필작가, 그는 사람들이 감정을 담은 편지를 작성하지만, 개인적으로는 외롭고 공허한 삶을 살고 있다.</p></div>
+                            <div class="actor-detail"><div class="actor-name"style="margin-bottom:20px";>사만다</div> 
+                            <p>엘리먼트 소프트웨어라는 기업이 만든 인공지능으로, 테오도르와 깊은 정신적 교감을 나누며 사랑에 빠진다.</p></div>
+                            <div class="actor-detail"><div class="actor-name"style="margin-bottom:20px";>캐서린</div> 
+                            <p>테오도르와 별거중인 아내로 테오도르와 함께 자랐으며, 그와의 관계에서 실망감을 느끼고 이혼을 요구한다.</p></div>
+                            
+
+
         </div>
-    </div>
+            </div>
+                </div>
+                        </div>
 
 
     <p>

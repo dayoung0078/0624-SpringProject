@@ -49,6 +49,15 @@
 }
 
 @font-face {
+    font-family: 'NanumPen';
+    src: url('../font/NanumPen.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+
+@font-face {
     font-family: 'GenR102';
     src: url('../font/GenR102.TTF ') format('truetype');
     font-weight: normal;
